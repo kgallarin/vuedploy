@@ -1,0 +1,48 @@
+@import 'palette';
+
+@font-face {
+    font-family: $circular-font;
+    src: url("~@fonts/CircularStd-Book.otf") format("opentype");
+}
+@font-face {
+    font-family: $circular-font-bold;
+    src: url("~@fonts/CircularStd-Bold.otf") format("opentype");
+}
+
+@mixin font-settings{
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  font-family: CircularStd;
+}
+
+@mixin ellipsis{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@mixin text-oflow {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+p{
+  line-height: normal;
+}
+.font-md{
+  font-size: $font-md;
+}
+.font-smd{
+  font-size: $font-smd;
+}
+.font-sm{
+  font-size: $font-sm;
+}
+.font-lg{
+  font-size: $font-lg;
+}
+
+.font-dark{
+  color:$dark;
+}
